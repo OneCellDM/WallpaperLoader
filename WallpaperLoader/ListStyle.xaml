@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:WallpaperLoader">
+
+    <DataTemplate x:Key="ListTeamplate">
+        <Grid>
+            <Border Background="{DynamicResource ControlBrush}">
+                <StackPanel>
+                    <Image Source="{Binding url_thumb}" 
+                       HorizontalAlignment="Left" 
+                       Width="250" Height="200"  
+                       VerticalAlignment="Top"  
+                       Stretch="UniformToFill" 
+                       Margin="2" 
+                       
+                       />
+                    
+                    <TextBlock>
+                      <Run>  </Run>
+                      <Run Text="{Binding width}"/>
+                      <Run Text="X"/>
+                      <Run Text="{Binding height}"/>
+                    </TextBlock>
+
+                </StackPanel>
+            </Border>
+           
+        </Grid>
+    </DataTemplate>
+
+        <ItemsPanelTemplate x:Key="ListPanelTemaplate">
+            <WrapPanel Orientation="Horizontal" />
+        </ItemsPanelTemplate>
+    
+
+</ResourceDictionary>

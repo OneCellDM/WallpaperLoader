@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     
+                    xmlns:local="clr-namespace:WallpaperLoader">
+
+    <SolidColorBrush  x:Key="ControlBrush" Color="Black"/>
+    <SolidColorBrush  x:Key="BackGroundBrush" Color="Black"/>
+    <SolidColorBrush  x:Key="ForeGroundBrush" Color="Black"/>
+    <SolidColorBrush  x:Key="ItemBorderBrush" Color="WhiteSmoke"/>
+
+
+</ResourceDictionary>

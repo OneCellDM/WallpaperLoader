@@ -16,6 +16,7 @@ namespace WallpaperLoader
        
         private  static  string Request(string URL)
         {
+            Console.WriteLine(URL);
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
             System.Net.WebRequest req = System.Net.WebRequest.Create(URL);
             System.Net.WebResponse resp = req.GetResponse();
@@ -31,7 +32,7 @@ namespace WallpaperLoader
         }
         public static WallpaperModel GetSeach(string term, int page,int width,int height)
         {
-            return JsonConvert.DeserializeObject<WallpaperModel>(Request(apiUrl + "method=search&term="+term+"&page="+page+"&with="+width+ "&height="+ height));
+            return JsonConvert.DeserializeObject<WallpaperModel>(Request(apiUrl + "method=search&term="+term+"&page="+page+"&width="+width+ "&height="+ height));
         }
 
 
